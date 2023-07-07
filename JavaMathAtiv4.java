@@ -1,47 +1,70 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class JavaMathAtiv4 { //Hemili Barbosa Dias e Regis Costa Pedro 2-52 Atividades JAVA MATH 4
+public class Math4_atv { //Hemili Barbosa Dias e Regis Costa Pedro 2-52 Atividades JAVA MATH 4
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
-        System.out.println("Digite o raio do círculo:");
-        double radius = input.nextDouble();
+        double raio, areaResul;
 
-        System.out.println("4a");
-        double circleArea = Math.PI * Math.pow(radius, 2);
-        System.out.println("Área do círculo: " + circleArea);
-        System.out.println("---------------------------------------");
+        System.out.println("--------------------Atividade A----------------------");
+        System.out.println("digite o valor do raio: ");
+        raio = ler.nextDouble();
 
-        System.out.println("4b");
-        double circumference = 2 * Math.PI * radius;
-        System.out.println("Circunferência do círculo: " + circumference);
-        System.out.println("Digite o valor do cateto 1:");
-        double cateto1 = input.nextDouble();
-        System.out.println("Digite o valor do cateto 2:");
-        double cateto2 = input.nextDouble();
-        System.out.println("---------------------------------------");
+        areaResul = Math.PI* Math.pow(raio,2);
 
-        System.out.println("4c");
-        double hypotenuse = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
-        System.out.println("Hipotenusa do triângulo retângulo: " + hypotenuse);
-        System.out.println("Digite a base do triângulo:");
-        double base = input.nextDouble();
-        System.out.println("Digite a altura do triângulo:");
-        double height = input.nextDouble();
-        System.out.println("---------------------------------------");
+        System.out.println("O valor da área é: " + areaResul);
+        System.out.println();
 
-        System.out.println("4d");
-        double triangleArea = (base * height) / 2;
-        System.out.println("Área do triângulo: " + triangleArea);
-        double side1, side2;
-        System.out.println("Digite o valor do lado 1 do retângulo:");
-        side1 = input.nextDouble();
-        System.out.println("Digite o valor do lado 2 do retângulo:");
-        side2 = input.nextDouble();
-        System.out.println("---------------------------------------");
+        System.out.println("--------------------Atividade B----------------------");
 
-        System.out.println("4e");
-        double perimeter = 2 * (side1 + side2);
-        System.out.println("Perímetro do retângulo: " + perimeter);
+        double raioB, resulB;
+
+        System.out.println("Digite o valor do raio: ");
+        raioB = ler.nextDouble();
+
+        resulB = (2*Math.PI)*Math.pow(raioB,2);
+
+        System.out.println("O valor da circunferencia  é: " + resulB);
+
+        System.out.println("--------------------Atividade C----------------------");
+
+        double cateto1, cateto2, resulC;
+
+        System.out.println("Valor do cateto 1: ");
+        cateto1 = ler.nextDouble();
+
+        System.out.println("Valor do cateto 2: ");
+        cateto2 = ler.nextDouble();
+
+        resulC =Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
+
+        System.out.println("O resultado é: " + resulC);
+
+        System.out.println("--------------------Atividade D---------------------");
+
+        double triangulo, i, resulD=0;
+
+        for (i=1; i<=4;i++){
+
+            System.out.println("Digite um lado do retângulo: ");
+            triangulo = ler.nextDouble();
+
+            resulD += triangulo;
+        }
+        System.out.println("O perimetro do retângulo é: " + resulD);
+
+        System.out.println("--------------------Atividade E---------------------");
+
+        double  base, altura, resulE;
+
+        System.out.println("Digite a base do triangulo: ");
+        base = ler.nextDouble();
+
+        System.out.println("Digite a altura do triangulo: ");
+        altura = ler.nextDouble();
+
+        resulE = (base*altura)/2;
+
+        System.out.println("O perimetro da área do triangulo é: " + resulE);
     }
 }
