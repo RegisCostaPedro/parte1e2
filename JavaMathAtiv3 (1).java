@@ -1,36 +1,68 @@
-import java.util.Scanner;
-
-public class JavaMathAtiv3 { //Hemili Barbosa Dias e Regis Costa Pedro 2-52 Atividades JAVA MATH 3
+import java.util.*;
+   //Regis costa Pedro e Hemili Barbosa 2-52
+public class atv_3Math
+{
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
 
-        System.out.println("Digite um valor:");
-        double value = input.nextDouble();
+        System.out.println("a) Calcular a tangente de um ângulo (VALOR) em radianos");
+        System.out.println();
 
-        System.out.println("3a");
-        double radians = Math.toRadians(value);
-        double tangent = Math.tan(radians);
-        System.out.println("Tangente do ângulo em radianos: " + tangent);
-        System.out.println("---------------------------------------");
+        double n1, resultado;
 
-        System.out.println("3b");
-        double arcsine = Math.asin(value);
-        System.out.println("Arco seno do valor: " + arcsine);
-        System.out.println("---------------------------------------");
+        System.out.println("informe um valor: ");
+        n1 = ler.nextDouble();
 
-        System.out.println("3c");
-        double arccosine = Math.acos(value);
-        System.out.println("Arco cosseno do valor: " + arccosine);
-        System.out.println("---------------------------------------");
+        resultado = Math.atan(Math.toRadians(n1));
 
-        System.out.println("3d");
-        double arctangent = Math.atan(value);
-        System.out.println("Arco tangente do valor: " + arctangent);
-        System.out.println("---------------------------------------");
+        System.out.println(" o resultado é: " + resultado);
 
-        System.out.println("3e");
-        double logarithm = Math.log(value);
-        System.out.println("Logaritmo natural do valor: " + logarithm);
-        System.out.println("---------------------------------------");
+        System.out.println("b) Calcular o arco seno do VALOR");
+        System.out.println();
+
+        double n2, resultado2;
+
+        System.out.println("informe um valor: ");
+        n2 = ler.nextDouble();
+
+        resultado2 = Math.asin(n2);
+
+        System.out.println(" o resultado é: " + resultado2);
+
+        System.out.println("c) Calcular o arco cosseno do VALOR");
+        System.out.println();
+
+        double n3, resultado3;
+
+        System.out.println("informe um valor: ");
+        n3 = ler.nextDouble();
+
+        resultado3 = Math.acos(n3);
+
+        System.out.println(" o resultado é: " + resultado3);
+
+        System.out.println("d) Calcular o arco tangente do VALOR");
+        System.out.println();
+
+        double n4, resultado4;
+
+        System.out.println("informe um valor: ");
+        n4 = ler.nextDouble();
+
+        resultado4 = Math.atan(n4);
+
+        System.out.println(" o resultado é: " + resultado4);
+
+
+        System.out.println("e)Calcular o logaritmo natural do VALOR");
+        System.out.println();
+
+        double n5, resultado5;
+
+        System.out.println("informe um valor: ");
+        n5 = ler.nextDouble();
+
+        resultado5 = Math.log(n5);
+        System.out.println(" o resultado é: " + resultado5);
     }
 }
